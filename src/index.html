@@ -2,11 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<noscript
 			><meta http-equiv="refresh" content="0; URL=/badbrowser"
@@ -106,27 +101,12 @@
 		<!-- Facebook Post Images. Can be repeated to allow choice when posting -->
 		<link rel="image_src" href="https://www.justifyagency.com/images/facebook-img.png" />
 
-		<!-- <script type="application/ld+json">
-			{
-				"@context": "http://schema.org",
-				"@type": "WebSite",
-				"publisher": "justifyagency",
-				"description": "Justify Agency helping companies to stand out through Premium UI/UX Design, Websites, Logo and Campaigns."
-				"url": "https://justifyagency.com", // url - This property specifies the URL of your website. It must match the canonical URL of your domain's homepage
-				"potentialAction": {
-					"@type": "SearchAction",
-					"target": "https://justifyagency.com/search?&q={query}",
-					"query-input": "required"
-				}
-			}
-		</script> -->
-
 		<!-- This comes on the home page only -->
-		<!-- <script type="application/ld+json">
+		<script type="application/ld+json">
 			{
 				"@context": "http://schema.org",
 				"@type": "Organization",
-				"name": "appName",
+				"name": "justifyagency",
 				"url": "https://justifyagency.com",
 				"logo": "https://justifyagency.com/images/logo.png",
 				"sameAs": [
@@ -136,7 +116,7 @@
           "https://www.linkedin.com/company/justifyagencyhq"
 				]
 			}
-		</script> -->
+		</script>
 
 		<!-- Les No Translate -->
 		<meta name="google" content="notranslate" />
@@ -148,16 +128,6 @@
 		<!--[if lt IE 8]>
 			<script src="//cdnjs.cloudflare.com/ajax/libs/json2/20150503/json2.min.js"></script>
     <![endif] -->
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.6/tailwind.min.css"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
-      rel="stylesheet"
-    />
 	</head>
 	<body class="ltr" itemscope itemtype="http://schema.org/LocalBusiness">
 		<!-- Google Tag Manager -->
@@ -202,7 +172,7 @@
             <a href="https://dribbble.com/justifyagencyhq"><ion-icon name="logo-dribbble" class="hover:text-pink-900"></ion-icon></a>
           </div>
           <div class="flex md:block items-center">
-            <div class="hidden md:block horizontal-text text-white mb-2 font-mono leading-relaxed hover:text-pink-900">MENU</div>
+            <div class="hidden md:block horizontal-text text-white mb-2 font-mono leading-relaxed cursor-pointer"  @click="isSidebarOpen = true">MENU</div>
             <ion-icon
               name="menu-sharp"
               class="text-2xl text-white cursor-pointer"
