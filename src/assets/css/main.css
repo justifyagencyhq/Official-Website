@@ -1,0 +1,46 @@
+@tailwind base;
+
+::selection {
+  background: #ff406f;
+  color:white; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #ff406f;
+  color:white; /* Gecko Browsers */
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+
+@tailwind components;
+
+#hero {
+  background-position: top left;
+  animation: bgAnimate 5s infinite;
+}
+
+@keyframes bgAnimate {
+  50% {background-position: center;}
+}
+
+.horizontal-text {
+  writing-mode: vertical-lr;
+  -webkit-writing-mode: vertical-lr;
+}
+
+.j-input {
+  @apply px-6 py-4 text-lg mt-6 w-full font-medium border-2 border-gray-900;
+}
+
+.j-input:focus {
+  @apply outline-none;
+}
+
+@import '../../../node_modules/sal.js/dist/sal.css';
+@tailwind utilities;
+
+.hand-drawn {
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
