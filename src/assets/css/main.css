@@ -9,6 +9,8 @@
   color:white; /* Gecko Browsers */
 }
 
+html,body{height:100%;}
+
 body {
   scroll-behavior: smooth;
 }

@@ -171,13 +171,16 @@
   <body>
     <div class="overflow-hidden">
       <div x-data="{ isSidebarOpen: false}">
+        <div x-show="isSidebarOpen" class="fixed min-h-screen bg-black bg-opacity-25 z-0 w-full" @click="isSidebarOpen = false">
+
+        </div>
         <nav
           class="border-r px-4 py-2 md:py-6 fixed z-20 bg-gray-900 w-full md:w-20 md:min-h-screen flex flex-row md:flex-col items-center justify-between items-center" data-sal="slide-right">
           <img src="./assets/images/justifyagency-logo-small.svg" alt="" class="w-8 md:w-10">
           <div class="flex flex-col text-white text-2xl hidden md:block text-center">
             <a href="https://facebook.com/Justify-Agency-114157446957155"><ion-icon name="logo-facebook" class="hover:text-pink-900"></ion-icon></a>
             <a href="https://twitter.com/justifyagencyhq"><ion-icon name="logo-twitter" class="hover:text-pink-900"></ion-icon></a>
-            <a href="https://twitter.com/justifyagencyhq"><ion-icon name="logo-instagram" class="hover:text-pink-900"></ion-icon></a>
+            <a href="https://instagram.com/justifyagencyhq"><ion-icon name="logo-instagram" class="hover:text-pink-900"></ion-icon></a>
             <a href="https://linkedin.com/company/justifyagencyhq"><ion-icon name="logo-linkedin" class="hover:text-pink-900"></ion-icon></a>
             <a href="https://dribbble.com/justifyagencyhq"><ion-icon name="logo-dribbble" class="hover:text-pink-900"></ion-icon></a>
           </div>
@@ -206,7 +209,7 @@
           <div class="flex text-3xl mt-4 text-white">
             <a href="https://facebook.com/Justify-Agency-114157446957155" class="mr-2"><ion-icon name="logo-facebook" class="hover:text-pink-900"></ion-icon></a>
             <a href="https://twitter.com/justifyagencyhq" class="mr-2"><ion-icon name="logo-twitter" class="hover:text-pink-900"></ion-icon></a>
-            <a href="https://twitter.com/justifyagencyhq" class="mr-2"><ion-icon name="logo-instagram" class="hover:text-pink-900"></ion-icon></a>
+            <a href="https://instagram.com/justifyagencyhq" class="mr-2"><ion-icon name="logo-instagram" class="hover:text-pink-900"></ion-icon></a>
             <a href="https://linkedin.com/company/justifyagencyhq" class="mr-2"><ion-icon name="logo-linkedin" class="hover:text-pink-900"></ion-icon></a>
             <a href="https://dribbble.com/justifyagencyhq" class="mr-2"><ion-icon name="logo-dribbble" class="hover:text-pink-900"></ion-icon></a>
           </div>
@@ -228,7 +231,7 @@
                 <a href="#contact" class="w-full lg:w-auto block text-lg md:text-2xl px-6 py-2 mt-6 text-pink-900 font-medium border-2 text-center border-pink-900 hover:bg-pink-900 hover:text-white transition duration-500 ease-in-out">Let's talk about it</a>
                 <h3 class="text-lg text-pink-900 md:text-xl font-medium flex items-center ml-4 mt-6">
                   <ion-icon name="planet" class="mr-4"></ion-icon>
-                  <span>Our Clients are from 35+ Countries</span>
+                  <span>Serving Clients all over the world</span>
                 </h3>
               </div>
             </div>
@@ -437,7 +440,7 @@
 
             <h4 class="text-md lg:text-2xl font-medium flex items-center mt-4">
               <ion-icon name="planet" class="mr-4"></ion-icon>
-              <span>Our Clients are from 35+ Countries</span>
+              <span>Serving Clients all over the world</span>
             </h4>
 
             <h4 class="text-md lg:text-2xl font-medium flex items-center mt-4">
