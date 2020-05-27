@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<noscript
-			><meta http-equiv="refresh" content="0; https://twitter.com/justifyagency.com"
+			><meta http-equiv="refresh" content="2; https://twitter.com/justifyagencyhq"
 		/></noscript>
 		<meta http-equiv="x-dns-prefetch-control" content="on" />
 		<link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
@@ -183,7 +183,7 @@
             <a href="https://dribbble.com/justifyagencyhq"><ion-icon name="logo-dribbble" class="hover:text-pink-900"></ion-icon></a>
           </div>
           <div class="flex md:block items-center">
-            <div class="hidden md:block horizontal-text text-white mb-2 font-mono leading-relaxed cursor-pointer"  @click="isSidebarOpen = true">MENU</div>
+            <div class="hidden md:block horizontal-text text-white mb-2 leading-relaxed cursor-pointer"  @click="isSidebarOpen = true">MENU</div>
             <ion-icon
               name="menu-sharp"
               class="text-2xl text-white cursor-pointer"
@@ -192,7 +192,7 @@
         </nav>
 
         <div
-          class="fixed min-h-screen bg-gray-900 right-0 md:left-0 md:right-auto z-20 px-4 py-6 flex flex-col justify-between"
+          class="fixed min-h-screen w-56 bg-gray-900 right-0 md:left-0 md:right-auto z-20 px-4 py-6 flex flex-col justify-between"
           x-show="isSidebarOpen">
           <div class="my-2">
             <ion-icon name="close-sharp" class="text-3xl text-white" @click="isSidebarOpen = false"></ion-icon>
@@ -204,7 +204,8 @@
             <a href="#partners" @click="isSidebarOpen = false" class="text-white text-2xl mt-4 hover:text-pink-900">Partners</a>
             <a href="#contact" @click="isSidebarOpen = false" class="text-white text-2xl mt-4 hover:text-pink-900">Contact</a>
           </div>
-          <div class="flex text-3xl mt-4 text-white">
+          <div class="flex flex-wrap text-3xl mt-4 text-white">
+            <a href="mailto:hello@justifyagency.com" class="block text-base mb-4 w-full text-bold hover:text-pink-900">hello@justifyagency.com</a>
             <a href="https://facebook.com/Justify-Agency-114157446957155" class="mr-2"><ion-icon name="logo-facebook" class="hover:text-pink-900"></ion-icon></a>
             <a href="https://twitter.com/justifyagencyhq" class="mr-2"><ion-icon name="logo-twitter" class="hover:text-pink-900"></ion-icon></a>
             <a href="https://instagram.com/justifyagencyhq" class="mr-2"><ion-icon name="logo-instagram" class="hover:text-pink-900"></ion-icon></a>
@@ -257,7 +258,7 @@
             </div>
           </div>
         </div>
-        <div class="flex flex-wrap items-center mt-20 border border-pink-900 p-4" data-sal="slide-up" id="pricing">
+        <div class="flex flex-wrap items-center mt-20 border-2 border-pink-900 px-20 py-8" data-sal="slide-up" id="pricing">
           <div class="w-full">
             <h2 class="text-4xl lg:text-6xl font-bold w-full">Pricing</h2>
             <h3 class="text-xl lg:text-3xl font-medium mb-10">Our Plans varies according to the region you're in + the work you want from us. Most of the time, project manager discuss the project and then we create custom package. Just let us know, and then we'll see what we can do with your budget</h3>
@@ -447,10 +448,14 @@
             </h4>
           </div>
           <div class="w-full lg:w-1/2 pr-2 md:pr-10" id="contact">
+            <div class="p-2 mt-10 border-2 font-medium text-center text-pink-900 text-2xl border-pink-900 text-white">
+              Use the Email: <a href="mailto:hello@justifyagency.com" class="font-bold">hello@justifyagency.com</a>
+            </div>
+            <div class="mt-4 text-center text-xl font-bold">OR</div>
             <form class="w-full" name="contact" method="POST" data-netlify="true">
-              <input class="j-input hand-drawn" type="text" name="name" placeholder="Full Name">
-              <input class="j-input hand-drawn" type="email" name="email" placeholder="Company Email">
-              <textarea class="j-input hand-drawn" rows="6" name="message" placeholder="We are listening!"></textarea>
+              <input class="j-input hand-drawn" type="text" name="name" placeholder="Full Name" required>
+              <input class="j-input hand-drawn" type="email" name="email" placeholder="Company Email" required>
+              <textarea class="j-input hand-drawn" rows="6" name="message" placeholder="We are listening!" required></textarea>
               <button type="submit" class="w-full md:w-auto block text-lg md:text-2xl px-6 py-2 mt-6 float-right text-pink-900 font-medium border-2 border-pink-900 hover:bg-pink-900 hover:text-white transition duration-500 ease-in-out hand-drawn">Get in Touch</button>
             </form>
           </div>
