@@ -166,7 +166,7 @@
 
     <link href="./assets/css/main.css" rel="stylesheet" />
   </head>
-  <body>
+  <body x->
     <div class="overflow-hidden">
       <div x-data="{ isSidebarOpen: false}">
         <div x-show="isSidebarOpen" class="fixed min-h-screen bg-black bg-opacity-25 z-0 w-full" @click="isSidebarOpen = false">
@@ -174,7 +174,7 @@
         </div>
         <nav
           class="border-r px-4 py-2 md:py-6 fixed z-20 bg-gray-900 w-full md:w-20 md:min-h-screen flex flex-row md:flex-col items-center justify-between items-center" data-sal="slide-right">
-          <img src="./assets/images/justifyagency-logo-small.svg" alt="Premium Branding, Web Design &amp; UI/UX Design - Justify Agency" class="w-8 md:w-10">
+          <a href="https://justifyagency.com"><img src="./assets/images/justifyagency-logo-small.svg" alt="Premium Branding, Web Design &amp; UI/UX Design - Justify Agency" class="w-8 md:w-10"></a>
           <div class="flex flex-col text-white text-2xl hidden md:block text-center">
             <a href="https://facebook.com/Justify-Agency-114157446957155"><ion-icon name="logo-facebook" class="hover:text-pink-900"></ion-icon></a>
             <a href="https://twitter.com/justifyagencyhq"><ion-icon name="logo-twitter" class="hover:text-pink-900"></ion-icon></a>
@@ -258,7 +258,7 @@
             </div>
           </div>
         </div>
-        <div class="flex flex-wrap items-center mt-20 border-2 border-pink-900 px-20 py-8" data-sal="slide-up" id="pricing">
+        <div class="flex flex-wrap items-center mt-20 border-2 border-pink-900 px-8 md:px-20 py-8" data-sal="slide-up" id="pricing">
           <div class="w-full">
             <h2 class="text-4xl lg:text-6xl font-bold w-full">Pricing</h2>
             <h3 class="text-xl lg:text-3xl font-medium mb-10">Our Plans varies according to the region you're in + the work you want from us. Most of the time, project manager discuss the project and then we create custom package. Just let us know, and then we'll see what we can do with your budget</h3>
@@ -423,7 +423,7 @@
             </div>
           </div>
         </div>
-        <div class="flex flex-wrap border-t-2 pt-10" data-sal="slide-up">
+        <div class="flex flex-wrap justify-between border-t-2 pt-10" data-sal="slide-up">
           <div class="w-full lg:w-1/2">
             <h2 class="text-4xl lg:text-6xl font-bold w-full">Become a Client</h2>
             <h3 class="text-xl lg:text-3xl font-medium mb-10">Just drop us a note, we'll get in touch soon because we are already excited! </h3>
@@ -447,8 +447,8 @@
               <span>Design, Development & Marketing at one place</span>
             </h4>
           </div>
-          <div class="w-full lg:w-1/2 pr-2 md:pr-10" id="contact">
-            <div class="p-2 mt-10 border-2 font-medium text-center text-pink-900 text-2xl border-pink-900 text-white">
+          <div class="w-full lg:w-1/2 pr-2" id="contact">
+            <div class="p-2 mt-10 border-2 font-medium text-center text-pink-900 text-xl md:text-2xl border-pink-900 text-white">
               Use the Email: <a href="mailto:hello@justifyagency.com" class="font-bold">hello@justifyagency.com</a>
             </div>
             <div class="mt-4 text-center text-xl font-bold">OR</div>
